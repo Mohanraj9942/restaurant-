@@ -37,10 +37,12 @@ input {
 
 body {
     padding: 0 10px 10px 10px;
+    /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar {
     width: 13px;
+    display: block;
 
 }
 
@@ -303,6 +305,9 @@ li:hover a {
     top: 55px;
 }
 
+.mobsubmenu{
+    display: none;
+}
 
 /* -----------------nav bar media q----------------------- */
 
@@ -317,19 +322,33 @@ li:hover a {
         right: 0;
         top: -2100%;
     }
+.menubar a{
+    color:rgb(255, 255, 255);
 
+}
     .logo {
         width: 100%;
     }
-
+    .loadtext {
+        margin-left: 10%;
+    }
     nav label {
         display: block;
         cursor: pointer;
+        font-size: 20px;
     }
-
+    .mobsubmenu{
+        display: block;
+    }
+.submenu{
+    display: none;
+}
+.menubar li{
+    border-radius: 5px;
+}
     nav {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 13px;
+        padding-bottom: 13px;
         justify-content: space-between;
         position: relative;
     }
@@ -349,12 +368,12 @@ li:hover a {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 35px;
-        font-size: 15px;
-        width: 35px;
+        height: 30px;
+        font-size: 13px;
+        width: 30px;
         border-radius: 50%;
         position: absolute;
-        top: 10.5px;
+        top: 13px;
         right: 50px;
     }
 
@@ -368,10 +387,10 @@ li:hover a {
 
 
 .home {
-
+overflow: hidden;
     display: flex;
     width: 100%;
-    height: 101vh;
+    min-height: 100vh;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px 5px 10px 10px;
     /* background: linear-gradient(60deg, #fce24f 50%, white 48%); */
@@ -392,8 +411,7 @@ li:hover a {
     /* height:650px; */
     border-radius: 50%;
     /* background-color: black; */
-    /* width: 95%;
-    height: 95%; */
+  
     width: 520px;
     height: 520px;
 
@@ -435,7 +453,6 @@ li:hover a {
     justify-content: center;
     align-items: center;
     /* order:2; */
-    height: 95vh;
 
 }
 
@@ -555,7 +572,9 @@ li:hover a {
     .home {
         flex-direction: column;
         height: 100vh;
-        padding-top: 90px;
+        padding-top: 150px;
+      background-color: rgb(148, 148, 148);
+       
     }
 
     .hrigthtbox,
@@ -673,7 +692,7 @@ li:hover a {
 
 
     .hleftbox {
-        margin-top: 60px;
+        margin-top: 70px;
     }
 
 
